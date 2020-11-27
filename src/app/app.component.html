@@ -1,0 +1,20 @@
+<h2>
+	Timer
+</h2>
+
+<label>Countdown time </label><input (change)="onInputChange($event)" #inpTimer/>
+
+<br/><br/>
+
+<div class="timer">
+	<span class="hrs">{{countdownTimer$.hrs.toString().padStart(2, "0")}}</span> :
+	<span class="mins">{{countdownTimer$.mins.toString().padStart(2, "0")}}</span> :
+	<span class="secs">{{ countdownTimer$.secs.toString().padStart(2, "0")}}</span> :
+	<span class="ms">{{countdownTimer$.ms.toString().padStart(3, "0")}}</span>
+</div>
+<br/>
+<br/>
+<button (click)="start($event)" #startBtn>Start</button>
+<button class="hide" (click)="stop($event)" #stopBtn>Stop</button>
+<button class="hide" (click)="pause($event)" #pauseBtn>Pause</button>
+<button (click)="resume($event)" #resumeBtn>Resume</button>

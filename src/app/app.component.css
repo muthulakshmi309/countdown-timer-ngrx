@@ -1,0 +1,23 @@
+p {
+  font-family: Lato;
+}
+
+button {
+margin-right: 100px
+}
+
+.timer {
+  font-size: 24px;
+}
+
+.hide {
+  display: none;
+}
+
+.green {
+color: green;
+}
+
+.red {
+color: red;
+}
